@@ -137,7 +137,7 @@ module.exports = {
 
         .upload({
           maxBytes: 10000000, // 10mb max file size
-          dirname: require('path').resolve(sails.config.appPath, 'assets/uploads')
+          dirname: path.resolve(sails.config.appPath, 'assets/uploads')
         }, function (err, uploadedFiles) {
           if (err) {
             return res.send(500, err.toString());
