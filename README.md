@@ -1,12 +1,12 @@
 # Book Store
 
 TODO:
-DONE - Add a book - upload actual document along with details like price, book name, author, price etc
-DONE - Get a list of all books
-DONE - Get single book
-DONE - Delete a book
-DONE - Rename a tag
-DONE - Get a list of all books and to filter that list by tag or date or limit by number, author, price
+* DONE - Add a book - upload actual document along with details like price, book name, author, price etc
+* DONE - Get a list of all books
+* DONE - Get single book
+* DONE - Delete a book
+* DONE - Rename a tag
+* DONE - Get a list of all books and to filter that list by tag or date or limit by number, author, price
 
 Check codes at:
 `/book-store/api/controllers/BookController.js`
