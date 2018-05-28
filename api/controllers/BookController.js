@@ -18,15 +18,6 @@ module.exports = {
    * URL: /book
    */
   find: function (req, res) {
-    var dateRange = req.param('dateRange') && req.param('dateRange').length ? JSON.parse(req.param('dateRange')) : null;
-
-    var condition = {};
-
-    if (dateRange && dateRange.start && dateRange.end) {
-      condition.startsAt = { $gte: new Date(dateRange.start) };
-      condition.endsAt = { $lte: new Date(dateRange.end) };
-    }
-
     var criteria = {
       where: {},
       sort: 'createdAt DESC'
